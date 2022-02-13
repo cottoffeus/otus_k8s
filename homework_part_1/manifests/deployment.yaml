@@ -38,6 +38,12 @@ spec:
           name: minimal-service
           ports:
             - containerPort: 8000
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 5
 
 #          imagePullPolicy: Always|IfNotPresent|Never
 #          readinessProbe:
