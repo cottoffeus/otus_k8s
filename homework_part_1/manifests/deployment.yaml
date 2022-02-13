@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: minimal-service-metadata
+  name: minimal-service
   namespace: testing
 spec:
   type: ClusterIP
   ports:
-    - port: 8000
+    - port: 777
       targetPort: 8000
   selector:
     app: minimal-service-app
@@ -14,7 +14,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: minimal-service-metadata
+  name: minimal-service
   namespace: testing
   labels:
     app: minimal-service-app

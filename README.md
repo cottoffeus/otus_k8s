@@ -1,6 +1,7 @@
 # otus_k8s
 ## This project implements simplest k8s manifests
 ### There are tree entities
-- deployment.yaml
+- deployment.yaml 
 - ingress.yaml
-- service.yaml
+
+Specify port forwarding for service kubectl --namespace testing port-forward service/minimal-service-app 8000:777
