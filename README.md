@@ -4,4 +4,4 @@
 - deployment.yaml 
 - ingress.yaml
 
-Specify port forwarding for service kubectl --namespace testing port-forward service/minimal-service-app 8000:777
+Specify port forwarding for service for example "kubectl --namespace testing port-forward service/minimal-service-app 8000:777"

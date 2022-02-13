@@ -4,7 +4,7 @@ metadata:
   name: minimal-service
   namespace: testing
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
     - port: 777
       targetPort: 8000
